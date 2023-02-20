@@ -1,0 +1,88 @@
+.Portfolio {
+    margin-bottom: 150px;
+    .titleContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        
+        .title {
+            animation: fadeIn 1s ease-in;
+            margin-bottom: 1rem;
+        }
+        p{
+            animation: fadeIn 1s ease-in;
+            margin-bottom: 1rem;
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    
+        li {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .element {
+                border: 0.5px solid cornflowerblue;
+                border-radius: 30px;
+                padding: 8px 8px 3px 8px;
+                height: 320px;
+                width: 200px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            
+                img {
+                    border-radius: 10px;
+                    height: 250px;
+                    margin-bottom: 10px;
+                }
+
+                .buttonsContainer {
+                    display: flex;
+                    justify-content: center;
+                    gap: 30px;
+
+                    .link1{
+                        font-size: 30px;
+                        color: cornflowerblue;
+                        margin-top: 9px;
+                    
+
+                        &:hover {
+                            color: purple;
+                        }
+                    }
+                    .link2{
+                        font-size: 45px;
+                        color: cornflowerblue;
+                        
+                
+
+                        &:hover {
+                            color: purple;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

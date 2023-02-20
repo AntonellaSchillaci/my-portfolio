@@ -1,0 +1,132 @@
+.skillsPage {
+    background-color:  rgb(15, 15, 60);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin: 30px;
+  
+    .title {
+      animation: fadeIn 1s ease-in;
+      margin-bottom: 1rem;
+
+      img {
+        width: 70px;
+      }
+    }
+  
+    .skillsList {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  
+      .skill1 {
+        background-color: cornflowerblue;
+        color: rgb(255, 132, 0);
+        font-size: 30px;
+        padding: 20px;
+        border-radius: 5px;
+        margin: 0.5rem;
+        text-align: center;
+        animation: slideIn 1s ease-in;
+        cursor: pointer;
+      }
+
+      .skill2 {
+        background-color: cornflowerblue;
+        color: yellow;
+        font-size: 40px;
+        padding: 15px;
+        border-radius: 5px;
+        margin: 0.5rem;
+        text-align: center;
+        animation: slideIn 1s ease-in;
+        cursor: pointer;
+      }
+      .skill3 {
+        background-color: cornflowerblue;
+        padding: 20px;
+        color: rgb(255, 0, 170);
+        font-size: 30px;
+        border-radius: 5px;
+        margin: 0.5rem;
+        text-align: center;
+        animation: slideIn 1s ease-in;
+        cursor: pointer;
+      }
+      .skill4 {
+        background-color: cornflowerblue;
+        padding: 20px;
+        color:  black;
+        font-size: 30px;
+        border-radius: 5px;
+        margin: 0.5rem;
+        text-align: center;
+        animation: slideIn 1s ease-in;
+        cursor: pointer;
+      }
+      .skill5 {
+        background-color: cornflowerblue;
+        padding:18px;
+        color: blue;
+        font-size: 35px;
+        border-radius: 5px;
+        margin: 0.5rem;
+        text-align: center;
+        animation: slideIn 1s ease-in;
+        cursor: pointer;
+      }
+      .skill6 {
+        background-color: cornflowerblue;
+        padding: 20px;
+        color: rgb(212, 76, 122);
+        font-size: 30px;
+        border-radius: 5px;
+        margin: 0.5rem;
+        text-align: center;
+        animation: slideIn 1s ease-in;
+        cursor: pointer;
+      }
+
+      $breakpoint-tablet: 768px;
+        @media (min-width: $breakpoint-tablet) {
+            .skill1, .skill3, .skill4,.skill6 {
+                font-size: 50px;
+            }
+            .skill2, .skill5 {
+                font-size: 60px;
+            }
+        }
+
+        $breakpoint-desktop: 1024px;
+        @media (min-width: $breakpoint-desktop) {
+            .skill1, .skill3, .skill4,.skill6 {
+                font-size: 70px;
+            }
+            .skill2, .skill5 {
+                font-size: 80px;
+            }
+        }
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  

@@ -1,0 +1,96 @@
+.contactPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .title {
+      animation: fadeIn 1s ease-in;
+      margin-bottom: 1rem;
+        
+      img {
+        width: 50px;
+      }
+    }
+  
+    .container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 20px;
+  
+      input {
+        border: 2px solid cornflowerblue;
+        font-size: 20px;
+        border-radius: 20px;
+        padding: 8px 30px;
+        cursor: pointer;
+
+        &:focus {
+            animation: pulse 1s ease-in-out;
+            outline: 2px solid purple;
+            border: 2px solid white;
+        }
+      }
+
+      textarea {
+        width: 300px;
+        border: 2px solid cornflowerblue;
+        font-size: 15px;
+        padding: 10px;
+        height: 100px;
+        resize: none;
+
+        &:focus {
+            animation: pulse 1s ease-in-out;
+            outline: 2px solid purple;
+            border: 2px solid white;
+        }
+      }
+
+      button {
+        background-color: cornflowerblue;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.25rem;
+        margin-top: 1rem;
+
+        &:hover {
+          animation: grow 1s ease-in-out;
+          background-color: purple;
+        }
+      }
+  
+     }     
+  
+}
+     
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.05);
+    }
+  }
+  
+  @keyframes grow {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+  
