@@ -27,6 +27,26 @@ const Portfolio = () => {
 
                 <li>
                    <div className={styles.element}>
+                        <img src="./../poke.png" />
+                        <div className={styles.buttonsContainer}>
+                            <a href="https://antonellaschillaci.github.io/Pokedex/" target="_blanck" className={styles.link1}><SiJsonwebtokens /></a>
+                            <a href="https://github.com/AntonellaSchillaci/Pokedex" target="_blanck" className={styles.link2}><DiGithubAlt /></a>
+                        </div>
+                   </div>
+                </li>
+
+                <li>
+                   <div className={styles.element}>
+                        <img src="./../users.png" />
+                        <div className={styles.buttonsContainer}>
+                            <a href="https://react-router-tau-nine.vercel.app/" target="_blanck" className={styles.link1}><SiJsonwebtokens /></a>
+                            <a href="https://github.com/AntonellaSchillaci/react-router" target="_blanck" className={styles.link2}><DiGithubAlt /></a>
+                        </div>
+                   </div>
+                </li>
+
+                <li>
+                   <div className={styles.element}>
                         <img src="./../blog.png" />
                         <div className={styles.buttonsContainer}>
                             <a href="https://next-blog-coral-seven.vercel.app/" target="_blanck" className={styles.link1}><SiJsonwebtokens /></a>
@@ -41,6 +61,16 @@ const Portfolio = () => {
                         <div className={styles.buttonsContainer}>
                             <a href="https://react-todolist-pi-two.vercel.app/" target="_blanck" className={styles.link1}><SiJsonwebtokens /></a>
                             <a href="https://github.com/AntonellaSchillaci/react-todolist" target="_blanck" className={styles.link2}><DiGithubAlt /></a>
+                        </div>
+                   </div>
+                </li>
+
+                <li>
+                   <div className={styles.element}>
+                        <img src="./../cheep.png" />
+                        <div className={styles.buttonsContainer}>
+                            <a href="https://cheep-pearl.vercel.app/" target="_blanck" className={styles.link1}><SiJsonwebtokens /></a>
+                            <a href="https://github.com/AntonellaSchillaci/cheep" target="_blanck" className={styles.link2}><DiGithubAlt /></a>
                         </div>
                    </div>
                 </li>
